@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PAN Card Submission – Flight Booking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>PAN Card Submission for Flight Booking</h2>
+
+  <form id="panForm">
+    <label>Passenger Name</label>
+    <input type="text" required>
+
+    <label>PNR / Booking Reference</label>
+    <input type="text" required>
+
+    <label>PAN Card Number</label>
+    <input type="text" id="pan" maxlength="10" required>
+
+    <label>Upload PAN Card Copy</label>
+    <input type="file" accept=".jpg,.png,.pdf" required>
+
+    <label class="checkbox">
+      <input type="checkbox" required>
+      I consent to submit my PAN details for flight booking verification only.
+    </label>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <p id="message"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
